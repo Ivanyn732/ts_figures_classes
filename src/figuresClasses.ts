@@ -14,11 +14,11 @@ export class Triangle implements Figure {
     public c: number,
   ) {
     if (a <= 0 || b <= 0 || c <= 0) {
-      throw new Error('Sides must be biger than 0');
+      throw new Error('Sides must be bigger than 0');
     }
 
     if (a + b <= c || a + c <= b || b + c <= a) {
-      throw new Error('longest side biger than a sum of two others');
+      throw new Error('longest side bigger than a sum of two others');
     }
   }
 
@@ -39,7 +39,7 @@ export class Circle implements Figure {
     public radius: number,
   ) {
     if (radius <= 0) {
-      throw new Error('Radius must be biger than 0');
+      throw new Error('Radius must be bigger than 0');
     }
   }
 
@@ -59,7 +59,7 @@ export class Rectangle implements Figure {
     public height: number,
   ) {
     if (width <= 0 || height <= 0) {
-      throw new Error('Sides must be biger than 0');
+      throw new Error('Sides must be bigger than 0');
     }
   }
 
